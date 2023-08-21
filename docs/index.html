@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="relative grid min-w-[100vw] min-h-screen font-kumbh-sans place-items-center overflow-hidden bg-dark-cyan"
+  >
+    <div
+      class="bg-[url(images/bg-pattern-top.svg)] w-[326px] h-[326px] sm:w-[978px] sm:h-[978px] bg-no-repeat translate-x-[-30%] translate-y-[-50%] absolute left-0 top-0 -z-10"
+    ></div>
+    <div
+      class="bg-[url(images/bg-pattern-bottom.svg)] w-[326px] h-[326px] sm:w-[978px] sm:h-[978px] bg-no-repeat translate-x-[30%] translate-y-[50%] absolute right-0 bottom-0 -z-10"
+    ></div>
+
+    <main
+      class="w-[22rem] h-[25rem] overflow-hidden bg-white rounded-xl shadow-get-css-scan-16"
+    >
+      <section class="relative h-32 bg-[url(images/bg-pattern-card.svg)]">
+        <img
+          src="images/image-victor.jpg"
+          class="absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] rounded-full border-slate-50 border-4"
+          alt=""
+        />
+      </section>
+      <section class="relative grid pt-16 pb-8 place-items-center">
+        <div class="flex gap-2">
+          <h1 class="text-xl font-bold text-very-dark-desaturated-blue">
+            Victor Crest
+          </h1>
+          <span class="self-center text-xl text-dark-grayish-blue">26</span>
+        </div>
+        <p class="text-dark-grayish-blue">London</p>
+      </section>
+      <hr />
+      <section class="flex justify-between p-8 text-center">
+        <div>
+          <p class="text-xl font-bold">80K</p>
+          <p class="text-dark-grayish-blue">Followers</p>
+        </div>
+        <div>
+          <p class="text-xl font-bold">803K</p>
+          <p class="text-dark-grayish-blue">Likes</p>
+        </div>
+        <div>
+          <p class="text-xl font-bold">1.4K</p>
+          <p class="text-dark-grayish-blue">Photos</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="hidden">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </aside>
+  </body>
+</html>
